@@ -7,7 +7,7 @@ description: A blog about technology and stuff related
 
 # if it's an external image, update below for true
 # better with square images
-external-image: true
+external-image: false
 picture: assets/images/My pic.jpg
 
 # If you want to include your resume, set to true
@@ -16,8 +16,8 @@ resume: false
 resume-external: false
 resume-url: https://google.com/?q=my+resume
 
-#url: https://koppl.in/indigo
-your url: https://samar-alaa.github.io
+url: https://koppl.in/indigo
+# your url: http://USERNAME.github.io
 
 permalink: /:title/
 
@@ -109,7 +109,7 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-    base_url: https://samar-alaa.github.io
+    base_url: https://github.com
 
 compress_html:
     ignore:
