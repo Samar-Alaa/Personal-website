@@ -109,7 +109,7 @@ plugins:
   - jekyll-admin
 
 jekyll-mentions:
-    base_url: https://github.com
+    base_url: https://github.com/Samar-Alaa/personal-website/
 
 compress_html:
     ignore:
