@@ -1,6 +1,6 @@
 ---
 title: Our project
 layout: post
-categories: blog
+date: '2019-12-04 08:22:13'
 ---
 this is my blog
