@@ -40,15 +40,15 @@ title: Blog
     <td> </td>
     <th>Pregnancies</th>
     <th>Glucose</th> 
-    <td>Blood Pressure </td>
-    <td>Skin Thickness </td>
-    <td>Insulin </td>
-    <td>BMI </td>
-    <td>Diabetes Pedigree Function </td>
-    <td>Age </td>
+    <th>Blood Pressure </th>
+    <th>Skin Thickness </th>
+    <th>Insulin </th>
+    <th>BMI </th>
+    <th>Diabetes Pedigree Function </th>
+    <th>Age </th>
   </tr>
   <tr>
-    <td>Mean</td>
+    <th>Mean</th>
     <td>13.38</td> 
     <td>121.86</td>
     <td>72.75 </td>
@@ -67,19 +67,33 @@ title: Blog
 
          <p class="lead">
          When model is divided into train and validation, it means that the training part wasn't considered in the validation part, and similarly the validation part wasn't considered in the training part.
-         That's why we used the cross-validation, so that the whole data will be considered in both training and validation. See following diagram show more explanation.[<a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fsearch%3Fbiw%3D1366%26bih%3D657%26tbm%3Disch%26sxsrf%3DACYBGNTVjWq520d3bo6Hdm0Mio65CIfrSg%253A1575467820856%26sa%3D1%26ei%3DLLvnXayhJuTzxgPImZog%26q%3DLDA%2520method%2520with%2520diabetes%2520prediction%26oq%3DLDA%2520method%2520with%2520diabetes%2520prediction%26gs_l%3Dimg.3...74112.78439..81085...0.0..0.154.1062.0j8....3..0....1..gws-wiz-img.......35i39.fNHaXlqB18A%26ved%3D0ahUKEwis57b-kpzmAhXkuXEKHciMBgQQ4dUDCAc%26uact%3D5%26fbclid%3DIwAR3XIv-KWSqQn6zrYQlp9c1VJHxEo5lODFikvWY0Mr46sK3vW_WJSSU2eSQ%23imgrc%3DSF22ClrXeD3dvM&h=AT2Ucjca4ZoMMMiQfciisf2TxFw4bvcgsD8mwcmxd5SC218K7cmUc6F34WjsX9GVDVmuWskOq8WWHUuyrCuPp6mUY6bBTL1k2HQZu3sXxYiAagrJkJScmVdVeDnYdfwgfUQa">Source</a>]
-
-         
+         That's why we used the cross-validation, so that the whole data will be considered in both training and validation. See following diagram show more explanation.[<a href="https://www.kaggle.com/shrutimechlearn/step-by-step-diabetes-classification-knn-detailed?fbclid=IwAR36cCUBqicQlEJy_f8eKcNljb1GO1CKwIM5h0pEGa_ZozAgs7ySI6-Ol2k">Source</a>
          <hr>
         <!-- Preview Image -->
         <img class="img-fluid rounded" src= "CrossV.png" alt="Cross Validation concept">
 
         <hr>
         
-         <br> We used 2 methods: Linear Discriminant Analysis and K Nearest Neighbors, for prediction. 
+         <br> We used 2 methods: Linear Discriminant Analysis and K Nearest Neighbors, for prediction.
+        
+         <h4 class="mt-4">Linear Discriminant </h4>
+         <a href="https://newonlinecourses.science.psu.edu/onlinecourses/sites/stat508/files/lesson09/image_01.gif">Source</a>
+          <hr>
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src= "LDA.gif" alt="Cross Validation concept">
 
+        <hr>
 
-          
+        <h4 class="mt-4">K Nearest Neighbors </h4>
+        <a href="https://www.researchgate.net/profile/Zainab_Sultani/publication/328146770/figure/fig3/AS:679495715536897@1539015811173/kNN-classification-example.ppm">Source</a>
+        <hr>
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src= "KNN.ppm" alt="Cross Validation concept">
+
+        <hr>
+
+          <h3 class="mt-4">Here are the results: </h3>
+
           <table style="width:110%"; align="center"; border= 1px solid black">
 
   <tr>
@@ -88,175 +102,26 @@ title: Blog
     <th>K Nearest Neighbors Classifier</th> 
   </tr>
   <tr>
-    <td>Accuracy</td>
+    <th>Accuracy</th>
     <td>0.7708</td> 
     <td>0.765</td>
   </tr>
   <tr>
-    <td>Sensitivity</td>
+    <th>Sensitivity</th>
     <td>0.5672</td> 
     <td>0.928</td>
   </tr>
   <tr>
-    <td>Specificity</td>
+    <th>Specificity</th>
     <td>0.88</td> 
     <td>0.463</td>
   </tr>
-  <td>P-value(CI 95%)</td>
+  <th>P-value(CI 95%)</th>
     <td>0.0000339</td> 
     <td>0.0001</td>
    </tr>
 </table>
         </p>
-
-        <hr>
-
-        <!-- Date/Time -->
-        <p>Posted on January 1, 2019 at 12:00 PM</p>
-
-        <hr>
-
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="http://placehold.it/900x300" alt="">
-
-        <hr>
-
-        <!-- Post Content -->
-        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, vero, obcaecati, aut, error quam sapiente nemo saepe quibusdam sit excepturi nam quia corporis eligendi eos magni recusandae laborum minus inventore?</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut, tenetur natus doloremque laborum quos iste ipsum rerum obcaecati impedit odit illo dolorum ab tempora nihil dicta earum fugiat. Temporibus, voluptatibus.</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, doloribus, dolorem iusto blanditiis unde eius illum consequuntur neque dicta incidunt ullam ea hic porro optio ratione repellat perspiciatis. Enim, iure!</p>
-
-        <blockquote class="blockquote">
-          <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-          <footer class="blockquote-footer">Someone famous in
-            <cite title="Source Title">Source Title</cite>
-          </footer>
-        </blockquote>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error, nostrum, aliquid, animi, ut quas placeat totam sunt tempora commodi nihil ullam alias modi dicta saepe minima ab quo voluptatem obcaecati?</p>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum, dolor quis. Sunt, ut, explicabo, aliquam tenetur ratione tempore quidem voluptates cupiditate voluptas illo saepe quaerat numquam recusandae? Qui, necessitatibus, est!</p>
-
-        <hr>
-
-        <!-- Comments Form -->
-        <div class="card my-4">
-          <h5 class="card-header">Leave a Comment:</h5>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
-          </div>
-        </div>
-
-        <!-- Single Comment -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-          </div>
-        </div>
-
-        <!-- Comment with nested comments -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Commenter Name</h5>
-            Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-            <div class="media mt-4">
-              <img class="d-flex mr-3 rounded-circle" src="http://placehold.it/50x50" alt="">
-              <div class="media-body">
-                <h5 class="mt-0">Commenter Name</h5>
-                Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-        <!-- Search Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Search</h5>
-          <div class="card-body">
-            <div class="input-group">
-              <input type="text" class="form-control" placeholder="Search for...">
-              <span class="input-group-btn">
-                <button class="btn btn-secondary" type="button">Go!</button>
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categories</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Web Design</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML</a>
-                  </li>
-                  <li>
-                    <a href="#">Freebies</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Tutorials</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Side Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Side Widget</h5>
-          <div class="card-body">
-            You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-    <!-- /.row -->
-
-  </div>
-  <!-- /.container -->
 
   <!-- Footer -->
   <footer class="py-5 bg-dark">
