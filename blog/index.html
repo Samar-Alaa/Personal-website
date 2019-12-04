@@ -7,32 +7,7 @@ title: Blog
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand" href="#">Start Bootstrap</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  
 
   <!-- Page Content -->
   <div class="container">
@@ -43,12 +18,95 @@ title: Blog
       <div class="col-lg-8">
 
         <!-- Title -->
-        <h1 class="mt-4">Diabetes </h1>
+        <h1 class="mt-4">Dataset Analysis & Machine Learning </h1>
+
+        <h2 class="mt-4">Diabetes prediction </h2>
+        <h3 class="mt-4">Introduction </h3>
 
         <!-- Author -->
         <p class="lead">
-          by
-          <a href="#">Start Bootstrap</a>
+          Diabetes is considered as one of the deadliest and chronic diseases. Our project aims to predict diabetes based on many factors(features), like: age, family history, blood pressure, ... etc. 
+          You can check and download our dataset <a href="https://www.kaggle.com/edubrq/diabetes">here</a>.
+        </p>
+         
+         <h3 class="mt-4">Data Analysis </h3>
+
+         <p class="lead">
+          By looking into our dataset, we found that we have some missing data, so we solved this by replacing these missing values in each attribute with the mean value of the data of this attribute.
+          
+           <table style="width:110%"; align="center"; border= 0.25px solid black">
+
+  <tr>
+    <td> </td>
+    <th>Pregnancies</th>
+    <th>Glucose</th> 
+    <td>Blood Pressure </td>
+    <td>Skin Thickness </td>
+    <td>Insulin </td>
+    <td>BMI </td>
+    <td>Diabetes Pedigree Function </td>
+    <td>Age </td>
+  </tr>
+  <tr>
+    <td>Mean</td>
+    <td>13.38</td> 
+    <td>121.86</td>
+    <td>72.75 </td>
+    <td>26.6 </td>
+    <td>118.66 </td>
+    <td>32.45 </td>
+    <td>0.74 </td>
+    <td>33.24 </td>
+  </tr>
+
+</table>
+        </p>
+        </p>
+
+         <h3 class="mt-4">Methods </h3>
+
+         <p class="lead">
+         When model is divided into train and validation, it means that the training part wasn't considered in the validation part, and similarly the validation part wasn't considered in the training part.
+         That's why we used the cross-validation, so that the whole data will be considered in both training and validation. See following diagram show more explanation.
+         
+         <hr>
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src= "CrossV.png" alt="Cross Validation concept">
+
+        <hr>
+        <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.google.com%2Fsearch%3Fbiw%3D1366%26bih%3D657%26tbm%3Disch%26sxsrf%3DACYBGNTVjWq520d3bo6Hdm0Mio65CIfrSg%253A1575467820856%26sa%3D1%26ei%3DLLvnXayhJuTzxgPImZog%26q%3DLDA%2520method%2520with%2520diabetes%2520prediction%26oq%3DLDA%2520method%2520with%2520diabetes%2520prediction%26gs_l%3Dimg.3...74112.78439..81085...0.0..0.154.1062.0j8....3..0....1..gws-wiz-img.......35i39.fNHaXlqB18A%26ved%3D0ahUKEwis57b-kpzmAhXkuXEKHciMBgQQ4dUDCAc%26uact%3D5%26fbclid%3DIwAR3XIv-KWSqQn6zrYQlp9c1VJHxEo5lODFikvWY0Mr46sK3vW_WJSSU2eSQ%23imgrc%3DSF22ClrXeD3dvM&h=AT2Ucjca4ZoMMMiQfciisf2TxFw4bvcgsD8mwcmxd5SC218K7cmUc6F34WjsX9GVDVmuWskOq8WWHUuyrCuPp6mUY6bBTL1k2HQZu3sXxYiAagrJkJScmVdVeDnYdfwgfUQa">Source</a>
+
+         <br> We used 2 methods: Linear Discriminant Analysis and K Nearest Neighbors, for prediction. 
+
+
+          
+          <table style="width:110%"; align="center"; border= 1px solid black">
+
+  <tr>
+   <td> </td>
+    <th>Linear Discriminant Analysis</th>
+    <th>K Nearest Neighbors Classifier</th> 
+  </tr>
+  <tr>
+    <td>Accuracy</td>
+    <td>0.7708</td> 
+    <td>0.765</td>
+  </tr>
+  <tr>
+    <td>Sensitivity</td>
+    <td>0.5672</td> 
+    <td>0.928</td>
+  </tr>
+  <tr>
+    <td>Specificity</td>
+    <td>0.88</td> 
+    <td>0.463</td>
+  </tr>
+  <td>P-value(CI 95%)</td>
+    <td>0.0000339</td> 
+    <td>0.0001</td>
+   </tr>
+</table>
         </p>
 
         <hr>
